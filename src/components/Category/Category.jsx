@@ -1,7 +1,6 @@
 import { Link} from "react-router-dom"
 import useFetch from "../../hooks/useFetch"
 import Loading from "../Loader/Loading"
-
 const Category=()=> {
   const { data, isLoading,error } = useFetch('https://dummyjson.com/products/categories')
   if (isLoading) {
@@ -11,7 +10,7 @@ const Category=()=> {
     <>
       {error?<div className='alert alert-danger'>{error}</div>:''}
       <div className="container py-5">
-      <h2 className="text-center py-4">Categories</h2>
+      <h2 className="text-center py-4 text-uppercase fw-semibold">Categories</h2>
       <hr />
       <div className="row g-5">
         {data.map((category, index) => (
@@ -19,7 +18,7 @@ const Category=()=> {
             <div className="card h-100 shadow-sm">
               <div className="card-body d-flex flex-column align-items-center text-center">
                 <h5 className="card-title text-capitalize">{category.name}</h5>
-                <Link to={`/category/${category.name}`} className="btn btn-primary mt-auto">
+                <Link to={`/category/${category.name}`} className="btn mt-auto">
                   More Info
                 </Link>
               </div>

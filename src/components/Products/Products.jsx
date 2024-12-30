@@ -12,7 +12,7 @@ const Products = () => {
     <>
       {error ? <div className='alert alert-danger'>{error}</div> : ''}
       <div className=" container py-5">
-        <h2 className='text-center py-4 fw-semibold'>Products</h2>
+        <h2 className='text-center py-4 fw-semibold '>Products</h2>
         <hr />
         <div className="row g-4 ">
           {data.products.map(product =>
@@ -22,7 +22,7 @@ const Products = () => {
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
                   <p className="card-text  text-truncate text-secondary">{product.description}</p>
-                  <Link className='btn mt-auto' to={`/category/${product.category}`}>details</Link>
+                  <Link className='btn mt-auto' to={`/products/${product.id}`}>details</Link>
                 </div>
               </div>
             </div>
