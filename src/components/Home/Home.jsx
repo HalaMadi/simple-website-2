@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
-import Category from '../Category/Category';
 import Loading from '../Loader/Loading';
 import './style.css';
 import Quotes from '../Quotes/Quotes';

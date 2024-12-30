@@ -5,7 +5,7 @@ import Category from "./components/Category/Category"
 import Footer from "./components/Footer/Footer"
 import Home from "./components/Home/Home"
 import Products from "./components/Products/Products"
-import Categories from "./components/CategoryList/categories"
+import Categories from "./components/CategoryList/Categories"
 import ProductDetails from "./components/ProductDetails/ProductDetails"
 
 const App = () => {
